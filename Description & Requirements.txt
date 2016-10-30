@@ -1,0 +1,18 @@
+p	PC System Analysis for Notepad
+
+    Notepad is a simple text editor for Microsoft Windows. It has been included in all versions of Microsoft Windows since Windows 1.0 in 1985.Notepad is a common text-only (plain text) editor. The resulting files—typically saved with the .txt extension—have no format tags or styles, making the program suitable for editing system files that are to be used in a DOS environment.Notepad supports both left-to-right and right-to-left based languages, and one can alternate between these viewing formats by using the right or left Ctrl+Shift keys to go to right-to-left format or left-to-right format, respectively.
+
+- creating text files "Untitled.txt" (default)
+- saving/copying/deleting text files
+- windows_help requirements
+	1. ability to change front style and size
+	2. ability to copy/cut/delete/paste text inside file
+	3. ability to print files
+	4. ability to insert time and date in a document
+	5. ability to find & replace specific characters or words
+	6. ability to see text in a line/ in a screen
+	7. ability to create a header/footer
+	8. ability to chnage the way document looks when its printed
+	9. ability to go to a specific line in text
+- ability to edit system files
+- supporting left-to-right & right-to-left based languages

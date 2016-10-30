@@ -1,0 +1,43 @@
+	PROBLEM
+Function "find" because of detailing direction of searching doesnt take into account the location of previous searching. The word inside which there is a location doesnt exist in the document - thats what function says.
+
+	FIND_FUNCTION
+1. last symbol - location in the document		last_word_up
+    find: complinent
+    direction: up
+2. last symbol - location in the document		last_word_down
+    find: complinent
+    direction: down
+3. first symbol - location in the document		first_character_up
+    find: a
+    direction: up
+4. first symbol - location in the document		first_character_down
+    find: a
+    direction: down
+    -> keep searching up to the word "hat"
+5. "hat" - location in the document		FAIL	word_word_up
+   find: hat
+   direction: up
+6. "hat" - location in the document		FAIL	word_word_down
+   find: hat
+   direction: down
+
+	REPLACE_FUNCTION
+1. first symbol - location in document		first_character_word
+    find: "a"
+    replace: "Manual"
+    -> keep searching up to "hat"
+         -> "hManualt"
+2. first symbol - location in document	            first_notexisting_word
+    find: "aaa"
+    replace: "Manual"
+    -> Cannot find "aaa"
+3. last symbol - location in document	FAIL	last_character_word
+    find: "a"
+    replace: "Manual"
+    -> Cannot find "a"
+4. word "problem" - location in document	FAIL	word_word_word
+   find: "problem"
+   replace: "Manual"
+   -> Cannot find "problem"
+
